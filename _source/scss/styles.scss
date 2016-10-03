@@ -1,0 +1,53 @@
+// Reset default browser styles using Normalize
+@import 'base/normalize';
+
+// Install FontAwesome for useful icons
+// @import "../../node_modules/font-awesome/scss/font-awesome.scss";
+
+// Import fonts from Google
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700|Lato:400,700);
+
+// Set variables and reusable mixins
+@import 'base/config',
+		'base/mixins';
+
+// Import typical layout styles
+@import 'base/flexbox-grid',
+		'base/grid',
+		'base/responsive',
+		'base/type';
+
+// Import reusable modules (Components)
+
+@import 'components/nav',
+		'components/buttons',
+		'components/forms',
+		'components/media',
+		'components/tabs';
+
+// Import Partials
+@import 'partials/header',
+		'partials/hero',
+		'partials/footer';
+
+
+// Specific project styles, add any section specific sass modules here (Pages)
+
+body {
+	background: $color-white;
+	font-family: $font-primary;
+}
+
+.intro {
+	padding: 4.0rem 0;
+
+	h3 {
+		padding: 2.0rem 0;
+		border-top: 1px solid $color-blue;
+		border-bottom: 1px solid $color-blue;
+	}
+}
+
+.content-section {
+	padding: 4.0rem 0;
+}

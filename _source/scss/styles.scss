@@ -23,7 +23,8 @@
 		'components/buttons',
 		'components/forms',
 		'components/media',
-		'components/tabs';
+		'components/tabs',
+		'components/indicator';
 
 // Import Partials
 @import 'partials/header',
@@ -46,8 +47,59 @@ body {
 		border-top: 1px solid $color-blue;
 		border-bottom: 1px solid $color-blue;
 	}
+
+	.box {
+		@include MQ(L) {
+			padding: 0 55px;
+
+		}
+	}
 }
 
 .content-section {
 	padding: 4.0rem 0;
 }
+
+.full-height {
+  min-height: 100vh;
+}
+
+.landing {
+  min-height: calc(100vh - 50px);
+  background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url('../img/SW_DominikMartin-copia-2.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.farmers {
+  background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url('../img/11456152984_68fecb3344_o.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.nutrition {
+  background: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url('../img/Slow Cooker Lamb Stew.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.gallery {
+	padding: 10.0rem 0 6.0rem 0;
+	min-height: calc(100vh - 160px);
+	position: relative;
+
+}
+
+// section {
+// 	position: relative;
+
+// 	&::before {
+// 		content: '';
+// 		position: absolute;
+// 		width: inherit;
+// 		height: inherit;
+// 		top: 0;
+// 		left: 0;
+// 		background: rgba(35, 31, 32, 0.5);
+
+// 	}
+
+// }
+

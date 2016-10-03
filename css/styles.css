@@ -266,10 +266,6 @@ body { font-family: "FuturaStdMedium", sans-serif; font-style: normal; font-weig
 
 .yellow { color: #f5d687; }
 
-.beige-bg { background: #ece4df; }
-
-.black-bg { background: #231f20; }
-
 h1, h2, h3, h4, h5 { margin: 0; }
 
 h1 { font-size: 3.4rem; font-style: normal; font-family: "EuclidFlexBold", sans-serif; }
@@ -304,11 +300,21 @@ ul { list-style-type: none; }
 /* =================================  Media Queries ==================================== */
 @media (min-width: 769px) { .main-header { width: 80%; margin: 0 auto; max-width: 1150px; } }
 
-.btn { -webkit-transition: 0.2s ease-in-out, background-color 0.2s ease-out, color 0.1s ease-out, border 0.1s ease-out; transition: 0.2s ease-in-out, background-color 0.2s ease-out, color 0.1s ease-out, border 0.1s ease-out; border: 3px solid #231f20; color: #231f20; font-family: "EuclidFlexLight", sans-serif; font-size: 1.5rem; text-transform: uppercase; height: 72px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; text-align: center; margin: 20px 0; }
+.btn { -webkit-transition: 0.2s ease-in-out, background-color 0.2s ease-out, color 0.1s ease-out, border 0.1s ease-out; transition: 0.2s ease-in-out, background-color 0.2s ease-out, color 0.1s ease-out, border 0.1s ease-out; background: transparent; font-family: "EuclidFlexLight", sans-serif; font-size: 1.5rem; text-transform: uppercase; height: 72px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; text-align: center; margin: 20px 0; font-weight: 400; }
 
 @media only screen and (min-width: 768px) { .btn { margin: 0 auto; width: 258px; } }
 
-.btn:hover { -webkit-transition: 0.2s ease-in-out, background-color 0.2s ease-out, color 0.1s ease-out, border 0.1s ease-out; transition: 0.2s ease-in-out, background-color 0.2s ease-out, color 0.1s ease-out, border 0.1s ease-out; background: #231f20; color: #FFFFFF; }
+.btn.small { height: 51px; }
+
+@media only screen and (min-width: 768px) { .btn.small { margin: 0 auto; width: 161px; } }
+
+.btn.black { border: 3px solid #231f20; color: #231f20; }
+
+.btn.black:hover { -webkit-transition: 0.2s ease-in-out, background-color 0.2s ease-out, color 0.1s ease-out, border 0.1s ease-out; transition: 0.2s ease-in-out, background-color 0.2s ease-out, color 0.1s ease-out, border 0.1s ease-out; background: #231f20; color: #FFFFFF; }
+
+.btn.white { border: 3px solid #FFFFFF; color: #FFFFFF; }
+
+.btn.white:hover { -webkit-transition: 0.2s ease-in-out, background-color 0.2s ease-out, color 0.1s ease-out, border 0.1s ease-out; transition: 0.2s ease-in-out, background-color 0.2s ease-out, color 0.1s ease-out, border 0.1s ease-out; background: #FFFFFF; color: #231f20; }
 
 .download-btn { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; text-align: end; }
 
@@ -352,9 +358,13 @@ header { background: #FFFFFF; height: 50px; }
 
 .hero p { color: #FFFFFF; }
 
-footer { background: white; height: 122px; padding: 0 25px; }
+footer { background: white; height: 122px; }
 
 body { background: #FFFFFF; font-family: "FuturaStdMedium", sans-serif; }
+
+.beige-bg { background: #ece4df; }
+
+.black-bg { background: #231f20; }
 
 .intro { padding: 4.0rem 0; }
 
@@ -366,10 +376,14 @@ body { background: #FFFFFF; font-family: "FuturaStdMedium", sans-serif; }
 
 .full-height { min-height: 100vh; }
 
-.landing { min-height: calc(100vh - 50px); background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/SW_DominikMartin-copia-2.jpg") no-repeat center center; background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/SW_DominikMartin-copia-2.jpg") no-repeat center center; background-size: cover; }
+.landing { min-height: calc(100vh - 50px); background: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../img/SW_DominikMartin-copia-2.jpg") no-repeat center center; background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../img/SW_DominikMartin-copia-2.jpg") no-repeat center center; background-size: cover; }
 
-.farmers { background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/11456152984_68fecb3344_o.jpg") no-repeat center center; background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/11456152984_68fecb3344_o.jpg") no-repeat center center; background-size: cover; }
+.farmers { background: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../img/11456152984_68fecb3344_o.jpg") no-repeat center center; background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../img/11456152984_68fecb3344_o.jpg") no-repeat center center; background-size: cover; }
 
-.nutrition { background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/Slow Cooker Lamb Stew.jpg") no-repeat center center; background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/Slow Cooker Lamb Stew.jpg") no-repeat center center; background-size: cover; }
+.nutrition { background: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../img/Slow Cooker Lamb Stew.jpg") no-repeat center center; background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../img/Slow Cooker Lamb Stew.jpg") no-repeat center center; background-size: cover; }
 
-.gallery { padding: 10.0rem 0 6.0rem 0; min-height: calc(100vh - 160px); position: relative; }
+.gallery, .cuts, .kitchen { padding: 10.0rem 0 6.0rem 0; min-height: calc(100vh - 160px); position: relative; }
+
+.subtext { padding: 8.0rem 0; }
+
+.inner { border: 7px solid #231f20; padding: 10.0rem; min-height: calc(80vh - 160px); }

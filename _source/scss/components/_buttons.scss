@@ -4,8 +4,7 @@
 
 .btn {
 	@include global-transition;
-	border: 3px solid $color-black;
-	color: $color-black;
+	background: transparent;
 	font-family: $font-tertiary-light;
 	font-size: 1.5rem;
 	text-transform: uppercase;
@@ -15,18 +14,43 @@
 	flex-direction: column;
 	text-align: center;
 	margin: 20px 0;
+	font-weight: 400;
 
 	@include MQ(XS) {
 		margin: 0 auto;
 		width: 258px;
 	}
 
+	&.small {
+		height: 51px;
 
-	&:hover {
-		@include global-transition;
-		background: $color-black;
-		color: $color-white;
+		@include MQ(XS) {
+			margin: 0 auto;
+			width: 161px;
+		}
 	}
+
+	&.black {
+		border: 3px solid $color-black;
+		color: $color-black;
+		&:hover {
+			@include global-transition;
+			background: $color-black;
+			color: $color-white;
+		}
+	}
+
+	&.white {
+		border: 3px solid $color-white;
+		color: $color-white;
+
+		&:hover {
+			@include global-transition;
+			background: $color-white;
+			color: $color-black;
+		}
+	}
+
 }
 
 .download-btn {

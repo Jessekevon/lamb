@@ -83,10 +83,6 @@ $font-tertiary: "EuclidFlexMedium", sans-serif;
 $font-tertiary-light: "EuclidFlexLight", sans-serif;
 $font-tertiary-bold: "EuclidFlexBold", sans-serif;
 
-// $font-primary-light: "apercu-light", sans-serif;
-// $font-primary-medium: "apercu-medium", sans-serif;
-// $font-primary-bold: "apercu-bold", sans-serif;
-
 
 body {
   font-family: $font-primary;
@@ -127,14 +123,6 @@ body {
 
 .yellow {
   color: $color-yellow;
-}
-
-.beige-bg {
-  background: $color-beige;
-}
-
-.black-bg {
-  background: $color-black;
 }
 
 // blockquote {

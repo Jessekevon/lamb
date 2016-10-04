@@ -20,7 +20,8 @@
 				'components/tabs',
 				'components/indicator',
 				'components/slick',
-				'components/hamburger';
+				'components/hamburger',
+				'components/card';
 
 // Import Partials
 @import 'partials/layout',
@@ -129,6 +130,19 @@ body {
 	flex-direction: column;
 	align-self: center;
 	align-items: flex-end;
+}
+
+
+.recipes {
+	.sub {
+		margin-bottom: 6.0rem;
+	}
+}
+
+.row {
+	&.cheat-neg-margin {
+		margin-bottom: 0 -1rem;
+	}
 }
 
 // .slider {

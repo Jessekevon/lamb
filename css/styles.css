@@ -281,7 +281,7 @@ h3 { font-size: 2.4rem; font-style: normal; font-family: "DocumentaDtlItalic", s
 
 h3 { font-size: 2.2rem; font-style: normal; font-weight: 100; font-family: "DocumentaDtlItalic", sans-serif; }
 
-@media only screen and (min-width: 768px) { h3 { font-size: 2.5rem; padding: 0 20px; } }
+@media only screen and (min-width: 768px) { h3 { font-size: 2.5rem; } }
 
 p { font-size: 1.4rem; font-family: "EuclidFlexLight", sans-serif; }
 
@@ -461,6 +461,20 @@ img { max-width: 100%; height: auto; }
 
 .hamburger--spring-r.is-active .hamburger-inner::before { top: 0; -webkit-transform: rotate(90deg); transform: rotate(90deg); transition: top 0.12s 0.18s cubic-bezier(0.33333, 0, 0.66667, 0.33333), -webkit-transform 0.15s 0.32s cubic-bezier(0.215, 0.61, 0.355, 1); -webkit-transition: top 0.12s 0.18s cubic-bezier(0.33333, 0, 0.66667, 0.33333), -webkit-transform 0.15s 0.32s cubic-bezier(0.215, 0.61, 0.355, 1); transition: top 0.12s 0.18s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.15s 0.32s cubic-bezier(0.215, 0.61, 0.355, 1); transition: top 0.12s 0.18s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.15s 0.32s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.15s 0.32s cubic-bezier(0.215, 0.61, 0.355, 1); }
 
+.card { padding: 0 1.0rem; margin-bottom: 4.0rem; }
+
+.card-inner { background: #FFFFFF; padding: 1.5rem; cursor: pointer; }
+
+.card-inner .label { padding-top: 1.5rem; }
+
+.card-inner .bg-img { background: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../img/Grilled Lamb Kabobs with Peach and Red Onion.jpg") no-repeat center center; background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../img/Grilled Lamb Kabobs with Peach and Red Onion.jpg") no-repeat center center; height: 178px; background-size: cover; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; position: relative; }
+
+.card-inner .bg-img p { font-size: 1.8rem; color: #FFFFFF; display: -webkit-box; display: -ms-flexbox; display: flex; margin: auto; opacity: 0; position: relative; z-index: 10; font-family: "EuclidFlexBold", sans-serif; text-transform: uppercase; }
+
+.card-inner:hover p { opacity: 1; }
+
+.card-inner:hover .bg-img:before { content: ''; position: absolute; top: 0; right: 0; bottom: 0; left: 0; height: 100%; width: 100%; background: rgba(157, 184, 145, 0.75); }
+
 header { background: #FFFFFF; height: 75px; left: 0; position: fixed; right: 0; top: 0; width: 100%; z-index: 1000; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 
 @media only screen and (min-width: 1025px) { header { height: 50px; } }
@@ -516,3 +530,7 @@ body { background: #FFFFFF; font-family: "FuturaStdMedium", sans-serif; }
 .right { text-align: right; }
 
 .col-right-wrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-item-align: center; align-self: center; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
+
+.recipes .sub { margin-bottom: 6.0rem; }
+
+.row.cheat-neg-margin { margin-bottom: 0 -1rem; }

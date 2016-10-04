@@ -1,33 +1,97 @@
 // Navigation
 // ------------------------------------------------------------------------------------------------
 
-@include MQ(S) {
-	.main-header,
-	.main-nav {
+.nav-wrap {
+	align-items: center;
+	background: rgba($color-blue, .95);
+	bottom: 0;
+	display: flex;
+	height: 100%;
+	left: 0;
+	overflow: scroll;
+	padding: 0 50px;
+	position: fixed;
+	right: 0;
+	transform: translateX(-100%);
+	width: 100%;
+	z-index: 99;
+	@include global-transition;
+
+	&.active {
+		@include global-transition;
+		transform: translateX(0);
+	}
+
+	@include MQ(M) {
+		background: $color-white;
 		display: flex;
-	}
-	.main-header {
-		flex-direction: column;
-		align-items: center;
-	}
-}
-
-@include MQ(L) {
-	.main-header {
 		flex-direction: row;
-		justify-content: space-between;
+		flex: inherit;
+		height: inherit;
+		overflow: auto;
+		padding: 0;
+		position: relative;
+		width: auto;
+		z-index: inherit;
+		transform: translateX(0);
 	}
-} 
-
-/* ================================= 
-  Media Queries
-==================================== */
-
-@media (min-width: 769px) {
-	.main-header
-		 {
-			width: 80%;
-			margin: 0 auto;
-			max-width: 1150px;
-		}
 }
+
+.nav-items {
+
+	li {
+		color: $color-white;
+		font-size: 2.2rem;
+		margin: 2.5rem 0;
+		position: relative;
+	}
+
+
+	@include MQ(M) {
+		display: flex;
+		flex-direction: row;
+		flex: inherit;
+
+		li {
+			align-items: center;
+			color: $color-black;
+			display: flex;
+			flex-direction: column;
+			font-family: $font-tertiary;
+			font-size: 1.4rem;
+			height: 50px;
+			margin: 0 20px;
+			text-transform: uppercase;
+
+			a {
+				align-items: center;
+				display: flex;
+				height: 50px;
+				position: relative;
+
+				&.active {			
+					&:before {
+						background: $color-black;
+						content: '';
+						height: 8px;
+						position: absolute;
+						top: 0;
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+.lamb-icon {
+  display: flex;
+  padding-left: 5px;
+
+  img {
+    height: 46px;
+    width: 79px;
+  }
+}
+

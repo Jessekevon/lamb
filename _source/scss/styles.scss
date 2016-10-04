@@ -25,13 +25,12 @@
 		'components/media',
 		'components/tabs',
 		'components/indicator',
-		'components/slick';
+		'components/slick',
+		'components/hamburger';
 
 // Import Partials
-@import 'partials/header',
-		'partials/hero',
-		'partials/footer';
-
+@import 'partials/layout',
+				'partials/hero';
 
 // Specific project styles, add any section specific sass modules here (Pages)
 
@@ -122,6 +121,41 @@ body {
 .align-self-centered {
 	align-self: center;
 }
+
+
+.blur {
+	filter: blur(4px);
+}
+
+.right {
+	text-align: right;
+}
+
+.hamburger {
+	z-index: 100;
+	position: relative;
+
+	&.is-active {
+	}
+}
+
+
+header {
+	background: $color-white;
+  height: 50px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
 
 // .slider {
 // 	.1 {

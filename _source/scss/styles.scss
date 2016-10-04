@@ -1,32 +1,26 @@
 // Reset default browser styles using Normalize
 @import 'base/normalize';
 
-// Install FontAwesome for useful icons
-// @import "../../node_modules/font-awesome/scss/font-awesome.scss";
-
-// Import fonts from Google
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700|Lato:400,700);
-
 // Set variables and reusable mixins
 @import 'base/config',
-		'base/mixins';
+				'base/mixins';
 
 // Import typical layout styles
 @import 'base/flexbox-grid',
-		'base/grid',
-		'base/responsive',
-		'base/type';
+				'base/grid',
+				'base/responsive',
+				'base/type';
 
 // Import reusable modules (Components)
 
 @import 'components/nav',
-		'components/buttons',
-		'components/forms',
-		'components/media',
-		'components/tabs',
-		'components/indicator',
-		'components/slick',
-		'components/hamburger';
+				'components/buttons',
+				'components/forms',
+				'components/media',
+				'components/tabs',
+				'components/indicator',
+				'components/slick',
+				'components/hamburger';
 
 // Import Partials
 @import 'partials/layout',
@@ -122,7 +116,6 @@ body {
 	align-self: center;
 }
 
-
 .blur {
 	filter: blur(4px);
 }
@@ -131,31 +124,12 @@ body {
 	text-align: right;
 }
 
-.hamburger {
-	z-index: 100;
-	position: relative;
-
-	&.is-active {
-	}
+.col-right-wrap {
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	align-items: flex-end;
 }
-
-
-header {
-	background: $color-white;
-  height: 50px;
-  left: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-
-}
-
 
 // .slider {
 // 	.1 {
@@ -177,6 +151,5 @@ header {
 // 		background: rgba(35, 31, 32, 0.5);
 
 // 	}
-
 // }
 

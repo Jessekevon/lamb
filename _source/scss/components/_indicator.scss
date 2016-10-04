@@ -3,7 +3,11 @@
   cursor: pointer;
   margin: 5.0rem auto 0 auto;
   width: 0;
-  display: inline-block;
+  display: none;
+
+  @include MQ(M) {
+    display: inline-block;
+  }
 
   &:before {
     content: '';

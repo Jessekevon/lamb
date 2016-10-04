@@ -24,7 +24,8 @@
 		'components/forms',
 		'components/media',
 		'components/tabs',
-		'components/indicator';
+		'components/indicator',
+		'components/slick';
 
 // Import Partials
 @import 'partials/header',
@@ -76,6 +77,7 @@ body {
   min-height: calc(100vh - 50px);
   background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url('../img/SW_DominikMartin-copia-2.jpg') no-repeat center center;
   background-size: cover;
+  padding-top: 50px;
 }
 
 .farmers {
@@ -90,19 +92,43 @@ body {
 
 .gallery, .cuts, .kitchen {
 	padding: 10.0rem 0 6.0rem 0;
-	min-height: calc(100vh - 160px);
+	min-height: calc(100vh - 200px);
 	position: relative;
 }
 
 .subtext {
 	padding: 8.0rem 0;
+
+	@include MQ(S) {
+		padding: 8.0rem 16.0rem;
+	}
 }
 
 .inner {
 	border: 7px solid $color-black;
 	padding: 10.0rem;
-	min-height: calc(80vh - 160px);
+	margin-top: -35px;
 }
+
+.cuts {
+	h1 {
+		background: $color-beige;
+		padding: 0 4.0rem;
+	}
+}
+
+// Must have parent flex property
+
+.align-self-centered {
+	align-self: center;
+}
+
+// .slider {
+// 	.1 {
+// 		background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url('../img/11456152984_68fecb3344_o.jpg') no-repeat center center;
+// 		background-size: cover;
+// 	}
+// }
 
 // section {
 // 	position: relative;

@@ -9,25 +9,45 @@
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="css/styles.css">
+
 	<!--[if lt IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
 </head>
 <body>
 
-	<header class="main-header">
-		<!-- <h1 class="name"><a href="#">Lamb</a></h1>
-		<ul class="main-nav">
-			<li><a href="#">Top</a></li>
-			<li><a href="#">Our Farmers</a></li>
-			<li><a href="#">Recipes</a></li>
-			<li><a href="#">Nutrition</a></li>
-			<li><a href="#">Cuts of Lamb</a></li>
-			<li><a href="#">In the Kitchen</a></li>
+	<nav class="container-fluid">
+		<header class="">
 
-		</ul> -->
-	</header><!--/.main-header-->   
+			<ul class="nav">
+			    <li><a href="#" data-scroll="section-one">Top</a></li>
+			    <li><a href="#" data-scroll="section-two">Our Farmers</a></li>
+			    <li><a href="#" data-scroll="section-three">Recipes</a></li>
+			    <li><a href="#" data-scroll="section-four">Nutrition</a></li>
+			    <li><a href="#" data-scroll="section-five">Cuts of Lamb</a></li>
+			    <li><a href="#" data-scroll="section-six">In The Kitchen</a></li>
+			</ul>
+
+			<!-- <div class="col-sm-3 lamb-icon">
+				<img src="img/lamb-icon.png">
+			</div>
+
+			<ul class="nav-items col-sm-6">
+				<li><a href="#">Top</a></li>
+				<li><a href="#">Our Farmers</a></li>
+				<li><a href="#">Recipes</a></li>
+				<li><a href="#">Nutrition</a></li>
+				<li><a href="#">Cuts Of Lamb</a></li>
+				<li><a href="#">In The Kitchen</a></li>
+			</ul>
+
+			<div class="col-sm-3">
+				
+			</div> -->
+		</header>
+	</nav>
+
 
 	<main role="main">
-		<section class="hero full-height landing">
+		<section id="section-one" class="hero full-height landing smooth-anchor" data-anchor="section-one">
 			<div class="image">
 				<img src="img/main.png">
 				<div id="anchorDown" class="scroll-ind">
@@ -50,16 +70,23 @@ cuts set lamb apart from other proteins.</h3>
 			</div>
 		</section>
 
-		<section class="gallery farmers">
+		<section id="section-two" class="gallery farmers smooth-anchor" data-anchor="section-two">
 			<div class="container-fluid">
 				<div class="row center-xs">
 					<h2 class="white bordered">Our Farmers</h2>
-
 				</div>
 
-				<div class="row center-xs">
-					<div class="col-xs-12 col-sm-10">
-						<h1 class="white subtext">Raised on pastureland, lamb is cared for by shepherds who value and seek to protect their pastoral heritage.</h1>
+				<div class="row slider slider-one center-xs">
+					<div>
+						<div class="">
+							<h1 class="white subtext">Raised on pastureland, lamb is cared for by shepherds who value and seek to protect their pastoral heritage.</h1>
+						</div>
+					</div>
+
+					<div>
+						<div class="">
+							<h1 class="white subtext">Raised on pastureland, lamb is cared for by shepherds who value and seek to protect their pastoral heritage.</h1>
+						</div>
 					</div>
 				</div>
 
@@ -68,32 +95,31 @@ cuts set lamb apart from other proteins.</h3>
 						<a href="#" class="btn small white">Read More</a>
 					</div>
 				</div>
-
 			</div>
 		</section>
 
-		<section class="content-section recipes beige-bg">
-			<div class="wrap container-fluid">
+		<section id="section-three" class="content-section recipes beige-bg smooth-anchor" data-anchor="section-three">
+			<div id="tabs" class="wrap container-fluid">
 				<div class="row center-xs">
 				    <div class="col-xs-10 col-sm-2">
 						<h1 class="green bordered">Recipes</h1>
 				    </div>
 				</div>
 
-				<div class="row center-xs tab-row">
-				    <div class="col-xs-12 col-sm-3">
+				<ul class="row center-xs tab-row">
+				    <li class="col-xs-12 col-sm-3">
 						<a href="#" class="btn black">30 Minute Lamb Meals</a>
-				    </div>
-			        <div class="col-xs-12 col-sm-3">
+				    </li>
+			        <li class="col-xs-12 col-sm-3">
 			    		<a href="#" class="btn black">Prep Now, Eat Later</a>
-			        </div>
-		            <div class="col-xs-12 col-sm-3">
+			        </li>
+		            <li class="col-xs-12 col-sm-3">
 		        		<a href="#" class="btn black">Elevate your<br>plan-based meals</a>
-		            </div>
-	                <div class="col-xs-12 col-sm-3 first-sm">
+		            </li>
+	                <li class="col-xs-12 col-sm-3 first-sm">
 	            		<a href="#" class="btn black">Spice it up with lamb</a>
-	                </div>
-				</div>	
+	                </li>
+				</ul>	
 
 				<div class="row center-xs">
 				    <div class="col-xs-10 col-sm-6">
@@ -106,18 +132,21 @@ cuts set lamb apart from other proteins.</h3>
 				        </div>
 				    </div>
 				</div>				
-			
 			</div>
 		</section>
 
-		<section class="gallery nutrition">
+		<section id="section-four" class="gallery nutrition smooth-anchor" data-anchor="section-four">
 			<div class="container-fluid">
 				<div class="row center-xs">
 					<h2 class="white bordered">Nutrition</h2>
 				</div>
 
-				<div class="row center-xs">
-					<div class="col-xs-12 col-sm-9">
+				<div class="row slider slider-two center-xs">
+					<div class="">
+						<h1 class="white subtext">A single portion of lamb provides over half of your daily protein needs-an ideal fuel for active bodies.</h1>
+					</div>
+
+					<div class="">
 						<h1 class="white subtext">A single portion of lamb provides over half of your daily protein needs-an ideal fuel for active bodies.</h1>
 					</div>
 				</div>
@@ -130,18 +159,25 @@ cuts set lamb apart from other proteins.</h3>
 			</div>
 		</section>
 
-		<section class="full-height cuts beige-bg">
+		<section id="section-five" class="full-height cuts beige-bg smooth-anchor" data-anchor="section-five">
 			<div class="wrap container-fluid">
 				<div class="row center-xs">
 					<h1>Cuts of Lamb</h1>
 				</div>
-				<!-- <div class="row inner">
 
-				</div> -->
+				<div class="row inner middle-xs center-xs">
+					<div class="col-xs-12 col-sm-6">
+						<img src="img/lamb.png">
+					</div>
+
+					<div class="col-xs-12 col-sm-6">
+						<p>test</p>
+					</div>
+				</div>
 			</div>
 		</section>
 
-		<section class="full-height kitchen black-bg">
+		<section id="section-six" class="full-height kitchen black-bg smooth-anchor" data-anchor="section-six">
 			<div class="wrap container-fluid">
 				<div class="row center-xs">
 					<h1 class="white bordered">In The Kitchen</h1>
@@ -167,7 +203,8 @@ cuts set lamb apart from other proteins.</h3>
 	</div>
 
 
-	<script src="js/jquery-1.10.1.min.js"></script>
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/slick.min.js"></script>
 	<script src="js/main.js"></script>
 
 </body>
